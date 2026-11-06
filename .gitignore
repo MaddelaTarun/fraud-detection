@@ -1,0 +1,9 @@
+# Original, uncompressed demo recording (the compressed copy lives in assets/)
+/demo.mp4
+
+# Build output
+/target/
+/build/
+
+# Runtime-generated transaction batches
+/data/raw/generated/

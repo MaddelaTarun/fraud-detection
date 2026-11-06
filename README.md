@@ -9,6 +9,7 @@ The pipeline generates realistic transaction batches (including injected fraud p
 ## Table of Contents
 
 - [Overview](#overview)
+- [Demo](#demo)
 - [Key Features](#key-features)
 - [Architecture](#architecture)
 - [Technology Stack](#technology-stack)
@@ -42,6 +43,16 @@ This project demonstrates an end-to-end, distributed data pipeline for fraud ana
 5. **Store** results as CSV datasets in HDFS for downstream reporting.
 
 It is intended as a learning/reference project for Hadoop, HDFS, MapReduce, and PySpark on a single-node or small cluster setup.
+
+---
+
+## Demo
+
+[![Animated preview of the fraud-detection pipeline demo](assets/demo-preview.gif)](assets/demo.mp4)
+
+Click the preview above to open the **full demo video** (3 min 24 s, 720p MP4). GitHub plays MP4 files directly in the repository viewer; if your browser downloads the file instead, open it with any video player.
+
+The recording shows the pipeline end to end: generating transaction batches, uploading them to HDFS, running the Spark fraud analysis, and reviewing the results.
 
 ---
 
@@ -116,6 +127,9 @@ It is intended as a learning/reference project for Hadoop, HDFS, MapReduce, and 
 fraud-detection/
 ├── pom.xml                              # Maven build; Hadoop deps are `provided`
 ├── README.md
+├── assets/
+│   ├── demo.mp4                         # Demo video (720p, compressed for GitHub)
+│   └── demo-preview.gif                 # Animated preview embedded above
 ├── src/
 │   ├── main/
 │   │   ├── java/
